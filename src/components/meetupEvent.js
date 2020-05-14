@@ -17,14 +17,14 @@ const MeetupEvent = ({
   const localeTime = combinedDate.toLocaleTimeString()
 
   return (
-    <div class="meetup-event" data-id={id} data-status={status}>
-      <h6 class="date">
+    <div className="meetup-event" data-id={id} data-status={status}>
+      <h6 className="date">
         {localeDate} {localeTime}
       </h6>
-      <h3 class="title">{name}</h3>
-      <h6 class="location">{`${venueName}, ${address}, ${city}`}</h6>
+      <h3 className="title">{name}</h3>
+      <h6 className="location">{`${venueName}, ${address}, ${city}`}</h6>
       <div
-        class="description"
+        className="description"
         dangerouslySetInnerHTML={{
           __html: description,
         }}

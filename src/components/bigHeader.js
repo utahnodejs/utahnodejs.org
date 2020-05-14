@@ -27,10 +27,10 @@ const BigHeader = () => {
   `)
 
   return (
-    <header class="big">
+    <header className="big">
       <SEO title="Home" />
       <h1>{title}</h1>
-      <div class="links">
+      <div className="links">
         {links.map(({ text, url }) => (
           <a href={url} key={text}>
             <h4 style={{ margin: `0` }}>{text}</h4>

@@ -15,7 +15,6 @@ const IndexPage = () => {
         <h2 id="upcoming-events">Upcoming Events</h2>
         <MeetupList
           filter={(m, i) => {
-            console.log(m, i)
             return i < 2
           }}
         >

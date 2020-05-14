@@ -18,10 +18,13 @@ const Organizers = () => {
   `)
 
   return (
-    <div class="organizers">
+    <div className="organizers">
       {organizers.map(({ name, img }) => (
-        <div class="organizer">
-          <div class="avatar" style={{ backgroundImage: `url(${img})` }}></div>
+        <div className="organizer" key={name}>
+          <div
+            className="avatar"
+            style={{ backgroundImage: `url(${img})` }}
+          ></div>
           <h4>{name}</h4>
         </div>
       ))}
