@@ -3,8 +3,11 @@ module.exports = {
     url: `https://utahnodejs.org`,
     title: `Utah Node.js`,
     description: `Homepage of the Utah Node.js meetup`,
-    image: `https://`,
     author: `@jamesona`,
+    imageDimensions: {
+      width: 320,
+      height: 320,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

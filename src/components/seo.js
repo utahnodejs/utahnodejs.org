@@ -22,6 +22,10 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            imageDimensions {
+              width
+              height
+            }
           }
         }
       }
@@ -61,6 +65,14 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:image`,
           content: logo,
+        },
+        {
+          property: `og:image:width`,
+          content: site.siteMetadata.imageDimensions.width,
+        },
+        {
+          property: `og:image:height`,
+          content: site.siteMetadata.imageDimensions.height,
         },
         {
           name: `twitter:card`,
