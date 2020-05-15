@@ -17,7 +17,11 @@ const IndexPage = () => {
           filter={(m, i) => {
             return i < 2
           }}
-        ></MeetupList>
+        >
+          <a className="see-more" href="events">
+            See More
+          </a>
+        </MeetupList>
       </Layout>
     </>
   )

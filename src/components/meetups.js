@@ -41,9 +41,6 @@ const MeetupList = ({ children, filter }) => {
             <MeetupEvent data={event} />
           </a>
         ))}
-      <a className="see-more" href="events">
-        See More
-      </a>
       {children}
     </div>
   )
