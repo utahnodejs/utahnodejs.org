@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
+import './meetups.css'
 import MeetupEvent from './meetupEvent'
 
 const MeetupList = ({ children, filter }) => {
@@ -26,25 +27,23 @@ const MeetupList = ({ children, filter }) => {
   `)
 
   return (
-    <div
-      style={{
-        display: `flex`,
-        flexDirection: `column`,
-      }}
-    >
+    <div className="meetups">
       {data.meetup.events
         .filter(typeof filter === 'function' ? filter : () => true)
         .map(event => (
           <a
+            className="event-link"
             key={event.id}
             href={event.link}
             target="_blank"
             rel="noopener noreferrer"
-            style={{ width: `100%`, maxWidth: `60rem` }}
           >
             <MeetupEvent data={event} />
           </a>
         ))}
+      <a className="see-more" href="events">
+        See More
+      </a>
       {children}
     </div>
   )

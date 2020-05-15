@@ -17,22 +17,7 @@ const IndexPage = () => {
           filter={(m, i) => {
             return i < 2
           }}
-        >
-          <a
-            href="events"
-            style={{
-              padding: `1rem`,
-              color: `inherit`,
-              background: `#fff`,
-              borderRadius: `0.25rem`,
-              boxShadow: `0 5px 5px rgba(0, 0, 0, 0.1)`,
-              margin: `0.5rem auto`,
-              fontWeight: `bold`,
-            }}
-          >
-            See More
-          </a>
-        </MeetupList>
+        ></MeetupList>
       </Layout>
     </>
   )

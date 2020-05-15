@@ -1,4 +1,5 @@
 header.big {
+  min-width: 200px;
   text-align: center;
   padding: 4rem 6rem;
 }
@@ -13,8 +14,16 @@ header .links a {
   text-decoration: none;
   text-transform: capitalize;
   display: inline-block;
-  border: 1px solid white;
-  border-radius: 1rem;
-  padding: 2rem;
-  margin: 1rem 2rem 0 0;
+  margin: 1rem 2rem 0;
+}
+
+@media screen and (max-width: 500px) {
+  header.big {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  header .links {
+    flex-wrap: wrap;
+  }
 }
